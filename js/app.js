@@ -1,3 +1,3 @@
-/**
- * Created by christophercole on 1/21/17.
- */
+'use strict';
+
+angular.module('team6App', ['team6App.services', 'team6App.controllers']);
