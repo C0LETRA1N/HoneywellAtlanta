@@ -14,12 +14,10 @@
     <!-- team6 app -->
     <script src="/js/app.js"></script>
     <script src="/js/controllers.js"></script>
+    <script src="/js/cleanInput.js"></script>
 </head>
 <body data-ng-app="team6App" data-ng-controller="HomeCtrl">
     <div id="map_canvas" data-tap-disabled="true"></div>
-    <div class="map">
-    Google Map
-  </div>
   <div class="content">
     Form Content
 
@@ -51,5 +49,11 @@
   <div>
     <button type="button" class="btn btn-primary">Submit</button>
   </div>
+    <div class="content">
+       <textarea id="comments"></textarea>
+    </div>
+    <div>
+      <button type="button" class="btn btn-primary" onclick="cleanInput()">Submit</button>
+    </div>
 </body>
 </html>
