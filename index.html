@@ -17,11 +17,39 @@
 </head>
 <body data-ng-app="team6App" data-ng-controller="HomeCtrl">
     <div id="map_canvas" data-tap-disabled="true"></div>
-    <div class="content">
-       Form Content
-    </div>
-    <div>
-      <button type="button" class="btn btn-primary">Submit</button>
-    </div>
+    <div class="map">
+    Google Map
+  </div>
+  <div class="content">
+    Form Content
+
+    <!-- Request Category drop down -->
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="true">
+    Request Category
+    <span class="caret"></span>
+  </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li ng-repeat="categories in z"></li>
+      </ul>      
+    </div> <!-- end of Request Category drop down -->
+
+    <!-- Request Subcategory drop down -->
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="true">
+    Request Subcategory
+    <span class="caret"></span>
+  </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li>List items</li>
+      </ul>      
+    </div> <!-- end of Request Subcategory drop down -->
+
+  </div>
+  <div>
+    <button type="button" class="btn btn-primary">Submit</button>
+  </div>
 </body>
 </html>
